@@ -1,33 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-image: linear-gradient(120deg, #f6d365, #da9886);
     color: white;
     min-height: 100vh;
 }
 
-header{
+header {
     font-size: 1.5rem;
 }
 
-header, form{
+header, form {
     min-height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.todo-button{
+.todo-button {
     cursor: pointer;
     color: #da9886;
     transition: all 0.3s ease;
 }
 
-.todo-button:hover{
+.todo-button:hover {
     background-color: #da9886;
     color: white;
 }
@@ -38,7 +38,7 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-form input, form button{
+form input, form button {
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
@@ -46,18 +46,18 @@ form input, form button{
     outline: none;
 }
 
-.todo-container{
+.todo-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.todo-list{
+.todo-list {
     min-width: 25%;
     list-style: none;
 }
 
-.todo{
+.todo {
     margin: 0.5rem;
     background-color: white;
     color: black;
@@ -67,11 +67,11 @@ form input, form button{
     align-items: center;
 }
 
-.todo li {
+.todo div {
     flex: 1;
 }
 
-.delete-btn, .edit-btn {
+.delete-btn, .edit-btn, .save-btn {
     background: #ff6f47;
     color: white;
     border: none;
@@ -80,14 +80,18 @@ form input, form button{
     font-size: 1rem ;
 }
 
-.edit-btn{
+.edit-btn, .save-btn {
     background-color: green ;
+}
+
+.save-btn {
+    display: none;
 }
 
 .todo-item {
     padding: 0rem 0.5rem;
 }
 
-.todo-item:focus{
+.todo-item:focus {
     outline: #ff6f47;
 }
