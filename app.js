@@ -34,7 +34,9 @@ function addTodo(event) {
   newTodo.innerText = todoInput.value;
   newTodo.classList.add("todo-item");
   newTodo.contentEditable = false;
+  newTodo.dataset.value = 'Ceka'
   todoLi.appendChild(newTodo); 
+
 
   //Edit button
   const editBtn = document.createElement("button");
